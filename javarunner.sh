@@ -1,5 +1,5 @@
 sf (){
-	subl $a.java
+	vim $a.java
 echo "___Press 1 if you wrote your code___"
 read b 
 if [ "$b" = "1" ]; then
