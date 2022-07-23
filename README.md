@@ -6,5 +6,4 @@ sed -i 's/vim/new-editor-name/g' javarunner.sh
 to use this file java must be pre installed. 
 # before run the file use this command:- 
 chmod 777 javarunner.sh 
-TRY THIS....
-# WE ARE ALSO TRYING :).
+# TRY THIS....WE ARE ALSO TRYING :).
