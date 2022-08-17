@@ -1,5 +1,5 @@
 sf (){
-	vim $a.java
+	subl $a.java
 echo "___Press 1 if you wrote your code___"
 read b 
 if [ "$b" = "1" ]; then
@@ -25,7 +25,13 @@ com (){
 echo "\033[41;5m𝓙𝓐𝓥𝓐 𝓡𝓤𝓝𝓝𝓔𝓡         \033[0m"
 echo "\033[33mGive same name to the class and the file\033[0m"
 echo "Enter the file name: "
-read a 
+read a
+touch $a.java
+echo "class $a {
+	public static void main(String[] args){
+
+}
+}" >> $a.java 
 sf
 while :
 do
