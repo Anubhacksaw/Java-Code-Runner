@@ -26,12 +26,15 @@ echo "\033[41;5m𝓙𝓐𝓥𝓐 𝓡𝓤𝓝𝓝𝓔𝓡         \033[0m"
 #echo "\033[33mGive same name to the class and the file\033[0m"
 echo "Enter the file name: "
 read a
+[ -s $a.java ]
+if [ "$?" != "0" ]; then
 touch $a.java
 echo "class $a {
 	public static void main(String[] args){
-
+		//your code here
 }
-}" >> $a.java 
+}" > $a.java	
+fi 
 sf
 while :
 do
